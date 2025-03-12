@@ -1,0 +1,115 @@
+adv Java
+  jdbc
+  wcd
+    ->
+    ->
+    ->
+
+
+
+emp: 1, Jack , 1000
+
+Employee emp = 1, Jack,1000
+
+int a = 1;
+jdbc
+
+
+id   name  salary   city
+1   jack  1000      Puna
+2   John  2000      Mumbai
+1   Jaxk 4000    Pune
+
+
+Java                      DB
+    -------------------->
+       Driver
+
+
+
+
+Java                   MySql  A  implements Connection
+                       DB2   B implements Connection
+                       Oracle sql  C implemnents Connection
+                       PostgreSql   D Implemnets Connection
+
+Connection c = new A();
+Connection c = new B();
+             = new C();
+
+Type 1
+Type 2
+Type 3
+Type 4
+
+JDBC-ODBC bridge
+Native-API driver
+Network-Protocol driver (Middleware driver)
+Database-Protocol driver (Pure Java driver) or thin driver.
+
+
+SQL:
+--DQL: Select 
+
+DML:
+  Select
+  Insert
+  Update
+  Delete
+  Merge
+
+DDL:
+  Create
+  Alter
+  Rename
+  Truncate
+  Drop
+
+
+TCL:
+ Commit
+ Rollback
+ Save
+  
+
+DCL:
+ Grant
+ Revoke
+
+
+Create
+  insert
+Read
+  select
+Update
+  update 
+Delete
+  delete
+
+
+
+C ob = new A();
+
+
+Specification
+Connection c = DriverManager.
+
+
+1. get the connection object
+2. crud operation
+    Statement
+    PreparedStatement
+    CallableStament
+
+    executeUpdate => insert, update, delete
+    executeQuery => select
+    execute => all query
+
+
+
+
+
+
+
+
+
