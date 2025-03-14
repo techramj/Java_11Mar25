@@ -23,12 +23,12 @@ public class Test {
 		// Record");
 		// System.out.println("Enter your choice");
 
-		/*List<Employee> empList = List.of(new Employee(101, "Abhijeet", 3000), new Employee(102, "Abhi", 30000),
-				new Employee(103, "Laxmi", 40000));*/
+		List<Employee> empList = List.of(new Employee(101, "Abhijeet", 3000), new Employee(102, "Abhi", 30000),
+				new Employee(103, "Laxmi", 40000));
 		
 		//addEmployeeExample(1003, "Shreya", 80000);
 		//addEmployeeExampleV1(1002, "Shreyash", 90000);
-		//addEmployeeExample(empList);
+		addEmployeeExample(empList);
 		
 		//List<Employee> bigList = getDummyEmployees(500000);
 		
@@ -36,10 +36,13 @@ public class Test {
 		
 		//addEmployeesUsingBatchUpdate(bigList);
 		
-		transferAmount(2,3,1000);
+		//transferAmount(2,3,1000);
 		
 
 	}
+	
+	
+	
 	
 	public static void transferAmount(int toEmpId, int fromEmpId, double balance) {
 		Connection con = ConnectionUtil.getConnection();
