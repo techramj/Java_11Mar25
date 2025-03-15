@@ -23,8 +23,13 @@ public class Test {
 		// Record");
 		// System.out.println("Enter your choice");
 
-		List<Employee> empList = List.of(new Employee(101, "Abhijeet", 3000), new Employee(102, "Abhi", 30000),
-				new Employee(103, "Laxmi", 40000));
+		List<Employee> empList = List.of(new Employee(104, "Abhijeet", 3000), 
+				new Employee(105, "Abhi", 30000),
+				new Employee(106, "Laxmi", 40000),
+				new Employee(107, "Sarvan", 40000),
+				new Employee(108, "Raj", 40000),
+				new Employee(109, "Yogesh", 100000)
+				);
 		
 		//addEmployeeExample(1003, "Shreya", 80000);
 		//addEmployeeExampleV1(1002, "Shreyash", 90000);
