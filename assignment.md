@@ -1,0 +1,48 @@
+# ASSIGNMENT 1
+```
+
+DB Tables
+
+emp
+id			name       salary     did
+1			Bushan		99999	 10
+2			Ritika		999999	  20
+
+
+mobiles
+mob_no    	emp_id
+9912345   	1
+99887766  	1
+88888888    1
+12345688    2	
+
+
+Department
+did     dname
+10		IT
+20		HR
+
+--------------------------------------
+
+class
+Department
+   id;
+   name
+
+Employee 
+   id
+   name
+   salary
+   Department department;
+   List<String> mobileNumbers;
+   
+   
+ 
+ write program to fetch List<Employee>;
+ 
+ 
+ display the empList.
+  
+
+
+```
