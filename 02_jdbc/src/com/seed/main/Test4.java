@@ -17,7 +17,8 @@ public class Test4 {
 	}
 	
 	public static void deleteOperationUsingResultSet() {
-		String sql = "select * from emp_11mar";
+		String sql = "select * from emp_11mar"; //incase error thrown the use all the column name 
+		//select id,name,salary from emp_11mar
 		Connection con = ConnectionUtil.getConnection();
 
 		try (Statement st = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE)) {
