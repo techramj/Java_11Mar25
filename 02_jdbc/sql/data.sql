@@ -14,17 +14,15 @@ create table emp_11mar
  );
  
  
-insert into emp_11mar(id,name,salary) values (1,'Jack',5000);
+create procedure add_num(a in number, b in number, c out number)
+is
+begin
+  c := a + b;
+end;
+/
 
-"insert into emp_11mar(id,name,salary) values ("  + id +",'" + name + "'," salary ")";
-Statement st = con.createStatement();
-st.exeucteUpdate(sql);
 
 
 
-"insert into emp_11mar(id,name,salary) values (?,?,?)"
-PreapredSatement ps = con.prepareCall(sql);
-ps.setInt(1,id);
-...
-ps.executeUpdate();
+
 
