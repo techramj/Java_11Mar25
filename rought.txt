@@ -109,7 +109,63 @@ Connection c = DriverManager.
 
 
 
+WCD
+
+
+java                    server
+object               id:1,
+                     name: Jack
+                     salary: 1000
+
+                     <emp>
+                        <id>1</id>
+                        <name>Jack</name>
+                        <salary>3000</salary>
+                     <emp>
+
+                     
+                     {
+                      "id":1,
+                      "name":"Jack",
+                       "salary" : 5000
+                     }
+
+
+#### Java
+
+Java 2 
+    SE
+    EE
+    ME
+
+    prog1    prog2
+    20s      .5s
+    1mb      2000mb
+
+WCD
+                      server
+client1
+client2
 
 
 
+get:
+http://localhost:8080/03_wcd1/welcome.html? =ram&password=123
 
+
+post:
+http://localhost:8080/03_wcd1/welcome.html
+
+
+    Serialixation           Servlet(interface)             ServletConfig
+
+          
+                          GenericServlet(class)
+
+
+                            HttpServlet (class)
+
+
+                            MyServlet
+                               Request
+                               Resposne
