@@ -13,5 +13,43 @@
   	<url-pattern>/login</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>lifecycle</servlet-name>
+  	<servlet-class>com.seed.servlet.LifecycleServlet</servlet-class>
+  	
+  	<init-param>
+  		<param-name>a</param-name>
+  		<param-value>apple</param-value>
+  	</init-param>
+  	
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>lifecycle</servlet-name>
+  	<url-pattern>/lifecycle</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>db.drivername</param-name>
+  	<param-value>com.mysql.cj.jdbc.Driver</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>db.url</param-name>
+  	<param-value>jdbc:mysql://localhost:3306/hr</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>db.username</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+  
+  
+  <context-param>
+  	<param-name>db.password</param-name>
+  	<param-value>root1234</param-value>
+  </context-param>
   
 </web-app>
+
