@@ -206,3 +206,41 @@ map login url to LoginServlet claass
   	<url-pattern>/lifecycle</url-pattern>
   </servlet-mapping>
   
+
+
+Thread lifecycle 
+new
+
+Runnable        suspend
+
+Running
+
+stop
+
+
+
+RequestDispatcher
+user    --------- >  seed 
+                      person1   -------->        person2
+
+                      person1
+                      person2
+
+
+
+send redirect 
+
+user  -------------->  seed person1
+      ---------------> person2
+
+
+
+Manager     SeniorManager  
+      
+
+Session
+
+Jsp
+ basic Jsp
+
+ 
