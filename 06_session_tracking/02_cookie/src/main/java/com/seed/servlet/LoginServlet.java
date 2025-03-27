@@ -14,7 +14,6 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import com.seed.dao.UserDao;
 import com.seed.entity.User;
@@ -77,15 +76,13 @@ public class LoginServlet extends HttpServlet{
 		out.println("<html>");
 		if(isValidUser) {
 			
-			HttpSession session = request.getSession();
-			session.setAttribute("username", username);
-			session.setAttribute("user", user);
+			Cookie userCookie = new Cookie("username", username);
+			response.addCookie(userCookie);
 			
 			out.println("<head>");
 			out.println("<title>Welcome</title>");
 			out.println("</head>");
 			out.println("<body>");
-			out.println("<h5 align='right'><a href='logout'>Logout</a></h5>");
 			out.println(" <h3>Welcome "+user.getFirstName()+" "+user.getLastName()+" </h3>");
 			out.println("<form  action='friends' method='get' >");
 			out.println("<button type='submit'>Display Friend's List</button>");

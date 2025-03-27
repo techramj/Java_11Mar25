@@ -243,4 +243,63 @@ Session
 Jsp
  basic Jsp
 
- 
+
+
+
+requst 1:  /index.html
+response1 :  login page
+
+request2 :-----------username ='jack' and pwd='123'------->  /login     
+response2:  Welcome usernmae button to diplay friend list
+
+request 3:
+/firends
+
+http is stateless
+
+
+request 
+Session
+application
+
+
+class MyServlet extends HttpServlet {
+  int a1 = 1234;
+
+   service(req, resp){
+     int a = 10;
+
+
+   }
+
+
+}
+
+.Jsp
+<%
+java code which you are writing in the service method
+
+%>
+
+
+<%=  x %>    =>   <% out.println(x) %>
+int a =1;
+<%=  a=10 %>  out.println(a=10);
+<% = a; %>    out.println(a;);
+
+
+class Two_jsp{
+  int a = 111;
+
+  void foo(){}
+
+  public void service(){
+
+    int a = 1;
+    a = 100;
+
+    out.println(a);
+  }
+
+
+}

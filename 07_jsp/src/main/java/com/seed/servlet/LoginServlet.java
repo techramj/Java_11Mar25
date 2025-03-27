@@ -73,32 +73,24 @@ public class LoginServlet extends HttpServlet{
 		
 		
 		PrintWriter out = response.getWriter();
-		out.println("<!DOCTYPE html>");
-		out.println("<html>");
+		
+		int a =1;
+		
+		
 		if(isValidUser) {
-			
+			System.out.println("valid user....");
 			HttpSession session = request.getSession();
 			session.setAttribute("username", username);
 			session.setAttribute("user", user);
-			
-			out.println("<head>");
-			out.println("<title>Welcome</title>");
-			out.println("</head>");
-			out.println("<body>");
-			out.println("<h5 align='right'><a href='logout'>Logout</a></h5>");
-			out.println(" <h3>Welcome "+user.getFirstName()+" "+user.getLastName()+" </h3>");
-			out.println("<form  action='friends' method='get' >");
-			out.println("<button type='submit'>Display Friend's List</button>");
-			out.println("</form>");
+			RequestDispatcher rd = request.getRequestDispatcher("loginSuccess.jsp");
+			rd.forward(request, response);
 		}else {
-			out.println("Invalid username and password");
+			System.out.println("invalid user");
 			RequestDispatcher rd = request.getRequestDispatcher("index.html");
-			rd.include(request, response);
+			rd.forward(request, response);
 		}
-		out.println("</body></html>");
 		
 	}
-	
 	
 	
 

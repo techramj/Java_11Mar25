@@ -234,5 +234,65 @@ response:
 #### why to use session object
 
 
+## Session Tracking
+1. hidden parameter
+2. cookie
+3. session object  (JSESSIONID=)
+  getSession() : create new session or return the existing session
+  getSession(boolean);
+    getSession(true) => create then new session 
+    getSession(false) => don't create the new session
+4. url rewriting
+
+
+## filter
+
+
+
+
+
+## jsp (java server page)
+
+### jsp tags
+1. scriplet
+<% %>
+
+2. declaration
+<%! %>
+
+3. expression
+<%=  %>
+
+4. directive
+<%@    %>
+
+
+5. comment
+<%--  --> jsp
+<!--  --> html comment
+
+
+#### Lifecycle of jsp
+1. translation (.jsp -> .java)
+2. compilation
+3. loading
+4. instantiation
+5. jspInit
+6. jspService
+7. jspDestory
+
+#### implicit object
+1. request
+2. response
+3. config
+4. application
+5. session
+6. out
+7. exception
+8. page
+9. pageContext
+
+
+
 
 
