@@ -265,6 +265,10 @@ response:
 
 4. directive
 <%@    %>
+a. page
+b. include
+c. taglib
+
 
 
 5. comment
@@ -282,15 +286,33 @@ response:
 7. jspDestory
 
 #### implicit object
-1. request
-2. response
-3. config
+1. request      HttpServletRequest
+2. response     HttpServletResponse
+3. config       ServletConfig
+4. application  ServletContext
+5. session      HttpSession
+6. out          JspWriter
+7. exception    Throwable
+8. page         Object
+9. pageContext  PageContext
+
+
+#### scope in jsp
+1. page 
+2. request
+3. session
 4. application
-5. session
-6. out
-7. exception
-8. page
-9. pageContext
+
+
+#### action
+jsp:userBean
+jsp:setProperty
+jsp:getProperty
+jsp:forward
+jsp:include
+
+
+#### <%@page include file="" > vs <jsp:include>
 
 
 
